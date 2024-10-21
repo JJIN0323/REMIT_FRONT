@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <title>MONEY FRONT</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/flag-icon.min.css" />
+</head>
+
+<body>
+    <!-- PAGEWRAPPER -->
+    <div id="pageWrapper">
+
+        <!-- HEADER -->
+        <div id="header">
+            <div class="menu">
+
+                <!-- 로고 -->
+                <h1 class="logo">INTERREMIT</h1>
+
+                <!-- 로그인 / 회원가입 / 언어선택 -->
+                <ul class="selectLanguage">
+                    <li>로그인</li>
+                    <li>회원가입</li>
+                    <li class="languageList flag flag-icon-kr">
+                        <!-- 언어선택 -->
+                        <ul class="languageOption">
+                            <li class="flag flag-icon-us">
+                                <span>EN</span>
+                            </li>
+                        </ul>
+                        <!-- 기본 // 한국어 -->
+                        <span>KO</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 메뉴 -->
+            <div class="navigation">
+                <nav id="nav">
+                    <ul>
+                        <li>서비스 개요</li>
+                        <li>소개 및 안내</li>
+                        <li>서비스 국가 안내</li>
+                        <li>송금 시뮬레이터</li>
+                        <li>공지사항</li>
+                        <li>FAQ</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- 회원가입 -->
+        <section class="wrapper">
+
+            <div class="container medium">
+                <!-- 회원가입 타이틀 -->
+                <h2 class="caption">회원가입</h2>
+
+                <!-- 필수입력항목 -->
+                <!--span class="textRedSmall paddingZero">* 는 필수 입력 항목입니다.</span-->
+
+                <!-- 입력 테이블 -->
+
+                <table width="100%" border="0" class="column">
+                    <!-- 아이디 -->
+                    <tr>
+                        <td>아이디</td>
+                        <td colspan="4" class="textBold">
+                            <span class="markText">01012345678</span>
+                        </td>
+                    </tr>
+                    <!-- 언어 -->
+                    <tr>
+                        <td class="need">언어</td>
+                        <td colspan="4">
+                            <ul class="languageSelect">
+                                <!-- 기본선택 SELECTED -->
+                                <li class="basic">
+                                    <p class="flag flag-icon-kr"></p>
+                                    <span>한국어</span>
+                                </li>
+                                <li data-value="value 1">
+                                    <p class="flag flag-icon-kr"></p>
+                                    <span>한국어</span>
+                                </li>
+                                <li data-value="value 2">
+                                    <p class="flag flag-icon-jp"></p>
+                                    <span>일본어</span>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!-- 국적 -->
+                    <tr>
+                        <td class="need">국적</td>
+                        <td colspan="4">
+                            <ul class="languageSelect">
+                                <li class="basic">
+                                    <p class="flag flag-icon-kr"></p>
+                                    <span>한국</span>
+                                </li>
+                                <li data-value="value 1">
+                                    <p class="flag flag-icon-kr"></p>
+                                    <span>한국</span>
+                                </li>
+                                <li data-value="value 2">
+                                    <p class="flag flag-icon-jp"></p>
+                                    <span>일본</span>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!-- 영문성명(여권기준) -->
+                    <tr>
+                        <td class="need">영문성명<span class="textRedSmall paddingZero"> (여권기준)</span></td>
+                        <td colspan="2">
+                            <input type="text" placeholder="First Name" />
+                        </td>
+                        <td colspan="2">
+                            <input type="text" placeholder="Last Name" />
+                        </td>
+                    </tr>
+                    <!-- 국문성명 -->
+                    <tr>
+                        <td>국문성명</td>
+                        <td colspan="2">
+                            <input type="text" placeholder="성" />
+                        </td>
+                        <td colspan="2">
+                            <input type="text" placeholder="이름" />
+                        </td>
+                    </tr>
+
+                    <!-- 주민등록번호 또는 외국인등록번호 -->
+                    <tr class="exception">
+                        <td class="need">주민등록번호 또는 외국인등록번호</td>
+                        <td>
+                            <input type="text" />
+                        </td>
+                        <td>-</td>
+                        <td>
+                            <input type="password" />
+                        </td>
+                    </tr>
+                    <!-- 휴대폰 -->
+                    <tr>
+                        <td>휴대폰</td>
+                        <td colspan="4" class="textBold">
+                            <span class="markText">01012345678</span>
+                        </td>
+                    </tr>
+                    <!-- 이메일 -->
+                    <tr>
+                        <td>이메일</td>
+                        <td colspan="2">
+                            <input type="text" />
+                        </td>
+                        <!-- 이메일 인증 버튼 -->
+                        <td>
+                            <button class="blueButton normal">이메일 인증</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- BLANK -->
+                        </td>
+                        <td colspan="4" class="textRedSmall">
+                            이메일 인증을 하시면, 이메일 계정을 아이디로 사용가능합니다.
+                        </td>
+                    </tr>
+                    <!-- 주소 -->
+                    <tr>
+                        <td>주소</td>
+                        <td colspan="4">
+                            <input type="text" />
+                        </td>
+                    </tr>
+                    <!-- 상세주소 -->
+                    <tr>
+                        <td>상세주소</td>
+                        <td colspan="4">
+                            <input type="text" />
+                        </td>
+                    </tr>
+                    <!-- 직업 -->
+                    <tr>
+                        <td class="need">직업</td>
+                        <td colspan="4">
+                            <select>
+                                <option>회사원</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- 송금목적 -->
+                    <tr>
+                        <td class="need">송금목적</td>
+                        <td colspan="4">
+                            <select>
+                                <option>용돈</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- 자금출처 -->
+                    <tr>
+                        <td class="need">자금출처</td>
+                        <td colspan="4">
+                            <select>
+                                <option>내지갑</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- 추천인코드 -->
+                    <tr>
+                        <td>추천인 코드</td>
+                        <td colspan="4">
+                            <input type="text" />
+                        </td>
+                    </tr>
+
+
+                </table>
+
+                <!-- 버튼 -->
+                <div class="buttonFrame">
+                    <button class="blueButton">다음</button>
+                </div>
+            </div>
+
+        </section>
+        <!-- END // 회원가입 -->
+
+        <!-- FOOTER -->
+        <div id="footer">
+            <div class="container">
+
+                <!-- 사이트맵 -->
+                <ul class="sitemap">
+                    <li>이용약관</li>
+                    <li>개인정보처리방침</li>
+                    <li>회사소개</li>
+                </ul>
+
+                <!-- 로고 -->
+                <h1 class="logo">INTERREMIT</h1>
+
+                <!-- 카피라이트 -->
+                <span>&copy; 인터레밋. All rights reserved.</span>
+
+                <!-- 카피라이트 정보 -->
+                <ul class="copyright">
+                    <li>서울시 00동 12번지 456호</li>
+                    <li>대표이사 : 홍길동</li>
+                    <li>TEL : 02-123-1234</li>
+                    <li>FAX : 02-123-1234</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END // PAGEWRAPPER -->
+
+    <!-- SCRIPT -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
